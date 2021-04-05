@@ -1,0 +1,10 @@
+C:\Users\irinniada\source\repos\TestCleaner\TestCleaner\bin\Debug\TestCleaner.exe.config
+C:\Users\irinniada\source\repos\TestCleaner\TestCleaner\bin\Debug\TestCleaner.exe
+C:\Users\irinniada\source\repos\TestCleaner\TestCleaner\bin\Debug\TestCleaner.pdb
+C:\Users\irinniada\source\repos\TestCleaner\TestCleaner\obj\Debug\TestCleaner.csprojAssemblyReference.cache
+C:\Users\irinniada\source\repos\TestCleaner\TestCleaner\obj\Debug\TestCleaner.MainForm.resources
+C:\Users\irinniada\source\repos\TestCleaner\TestCleaner\obj\Debug\TestCleaner.Properties.Resources.resources
+C:\Users\irinniada\source\repos\TestCleaner\TestCleaner\obj\Debug\TestCleaner.csproj.GenerateResource.cache
+C:\Users\irinniada\source\repos\TestCleaner\TestCleaner\obj\Debug\TestCleaner.csproj.CoreCompileInputs.cache
+C:\Users\irinniada\source\repos\TestCleaner\TestCleaner\obj\Debug\TestCleaner.exe
+C:\Users\irinniada\source\repos\TestCleaner\TestCleaner\obj\Debug\TestCleaner.pdb
