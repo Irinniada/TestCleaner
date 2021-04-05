@@ -14,12 +14,11 @@ namespace NMFileClasses
         public string path;
         public List<string> listOfFiles = new List<string>();
 
-        //якщо нічого не передалось - проблема
+        //Analyse files in temp
         public FindTemp()
         {
             path = @"c:\Windows\temp";
-
-            //string Account = Environment.UserName;
+                        
             DirectoryInfo dirInfo = new DirectoryInfo(path);
 
             try
@@ -28,12 +27,11 @@ namespace NMFileClasses
                 {
                     foreach (FileInfo file in dirInfo.GetFiles())
                     {
-                        listOfFiles.Add(file.Name);
-                        //file.Delete();
+                        listOfFiles.Add(file.Name); //to describe list of files                        
                     }
                 }
             }
-            catch (UnauthorizedAccessException)
+            catch (UnauthorizedAccessException) //no access to folder
             {
                 MessageBox.Show(
                     "Not Access",
@@ -51,8 +49,7 @@ namespace NMFileClasses
     class ClearTemp
     {
         public string path;
-        //public List<string> listOfFiles = new List<string>();
-
+        
         public ClearTemp()
         {
 
@@ -66,10 +63,10 @@ namespace NMFileClasses
                         
             if (dirInfo.Exists)
             {
-                int count = dirInfo.GetFiles().Length;
-                double step = (double) 100 / count;
-                progressBar.Value = 0;
-                string nonDeleted = "";
+                int count = dirInfo.GetFiles().Length; //
+                double step = (double) 100 / count;    // to describe in progress bar
+                progressBar.Value = 0;                 //
+                string nonDeleted = ""; 
                 foreach (FileInfo file in dirInfo.GetFiles())
                 {
                     try
@@ -78,6 +75,7 @@ namespace NMFileClasses
                         progressBar.Value = Convert.ToInt32((Convert.ToDouble(progressBar.Value) + step)) - 1;
                         file.Delete();
                     }
+                    //remove an add can output the list of undeleted files
                     catch(System.IO.IOException) 
                     {
                         nonDeleted += file.Name + "\n";
