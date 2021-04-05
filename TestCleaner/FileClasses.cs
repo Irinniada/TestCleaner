@@ -63,6 +63,7 @@ namespace NMFileClasses
                         
             if (dirInfo.Exists)
             {
+                // TODO: поміняти вивід з відсотків на к-ть файлів, поставити мін макс для прогрес бару
                 int count = dirInfo.GetFiles().Length; //
                 double step = (double) 100 / count;    // to describe in progress bar
                 progressBar.Value = 0;                 //
